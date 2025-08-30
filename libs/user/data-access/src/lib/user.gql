@@ -1,0 +1,31 @@
+query Me {
+    me {
+        username
+        email
+        lastLogin
+        permissions
+        golfer {
+            firstName
+            middleName
+            lastName
+            nickname
+            email
+            phoneNumber
+            birthdate
+            stateProvince
+            stateProvinceCode
+            country
+            countryCode
+            handedness
+            ghin {
+                id
+                clubName
+                handicapIndex
+            }
+            avatar {
+                bucket
+                path
+            }
+        }
+    }
+}

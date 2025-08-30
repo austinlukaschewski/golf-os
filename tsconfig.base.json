@@ -1,0 +1,30 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "declaration": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "lib": ["es2020", "dom"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "rootDir": ".",
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "strictPropertyInitialization": false,
+        "target": "es2015",
+        "paths": {
+            "@golf-os/golfer/nestjs": ["libs/golfer/nestjs/src/index.ts"],
+            "@golf-os/models/graphql": ["libs/models/graphql/src/index.ts"],
+            "@golf-os/models/postgresql": ["libs/models/postgresql/src/index.ts"],
+            "@golf-os/types": ["libs/types/src/index.ts"],
+            "@golf-os/ui/shared": ["libs/ui/shared/src/index.ts"],
+            "@golf-os/user/data-access": ["libs/user/data-access/src/index.ts"],
+            "@golf-os/user/nestjs": ["libs/user/nestjs/src/index.ts"],
+            "@golf-os/user/ui": ["libs/user/ui/src/index.ts"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
+}

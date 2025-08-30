@@ -1,0 +1,9 @@
+{
+    "name": "golfer-nestjs",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/golfer/nestjs/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project golfer-nestjs --web",
+    "targets": {}
+}

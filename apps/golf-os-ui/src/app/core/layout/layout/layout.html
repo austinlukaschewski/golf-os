@@ -1,0 +1,24 @@
+<golf-os-header />
+<!-- <golf-os-navigation /> -->
+
+<main>
+    <div class="hero">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold">Get Started</h1>
+                <p class="py-6">Upload your first launch monitor CSV to unlock Golf OS!</p>
+                <form class="flex flex-col space-y-4" [formGroup]="form">
+                    <label class="input input-bordered flex items-center gap-2">
+                        Session Name
+                        <input type="text" class="grow" formControlName="name" />
+                    </label>
+
+                    <input type="file" class="file-input file-input-bordered w-full" (change)="onFileChange($event)" />
+
+                    <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <golf-os-footer />
+</main>

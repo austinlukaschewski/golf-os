@@ -1,0 +1,44 @@
+@use 'resets';
+
+@forward 'tailwind';
+@forward 'components/public';
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // background-color: var(--mat-sys-background);
+    // color: var(--mat-sys-on-background);
+    font-family: Inter, 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    scroll-behavior: smooth;
+
+    @include resets.root-definitions();
+    @include resets.light-mode-definitions();
+}
+
+html[data-theme='dark'] {
+    @include resets.dark-mode-definitions();
+}
+
+@media (prefers-reduced-motion) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+html,
+body {
+    height: 100vh;
+    min-height: 100vh;
+
+    @supports (height: 100svh) {
+        height: 100svh;
+    }
+}
+
+body {
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
